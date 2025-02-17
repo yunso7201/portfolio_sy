@@ -353,6 +353,11 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0 0 var(--color-accent);
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+.arrow-up--show {
+  opacity: 1;
 }
 /* Footer */
 #contact {

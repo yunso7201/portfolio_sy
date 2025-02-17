@@ -15,3 +15,13 @@ let homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 })
+
+// arrow up버튼을 아래로 스크롤시 투명하게 처리함
+let arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if(window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add('arrow-up--show');
+  } else {
+    arrowUp.classList.remove('arrow-up--show');
+  }
+})
