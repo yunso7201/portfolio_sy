@@ -120,7 +120,7 @@ button:focus {
 /* Home */
 #home {
   /* background-color: var(--color-primary); */
-  background-color: purple;
+  background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
